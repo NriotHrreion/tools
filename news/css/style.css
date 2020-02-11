@@ -1,0 +1,38 @@
+/* By NriotHrreion */
+
+body {
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40pt;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 9pt;
+}
+
+.card {
+  padding: 15px;
+}
+
+.card #title {
+  font-size: 30pt;
+}
+
+.card #time {
+  font-size: 15pt;
+}
+
+.card #pic {
+  width: 300px;
+  height: 150px;
+  float: left;
+  padding: 20px;
+}
+
+.card #digest {
+  font-size: 10pt;
+}
