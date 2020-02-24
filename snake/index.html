@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <link rel="icon" href="favicon.ico">
+  <title>贪吃蛇</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      width: 800px;
+      height: 400px;
+      margin: 50px auto;
+    }
+
+    .btn {
+      width: 100px;
+      height: 40px;
+      margin: 10px;
+    }
+
+    .map {
+      position: relative;
+      width: 800px;
+      height: 400px;
+      background: #fff;
+      border: solid 1px black;
+      margin: 10px;
+    }
+
+    #difficulty {
+      height: 40px;
+      margin: 10px;
+    }
+
+    .dfy {
+      float: left;
+    }
+
+    .score {
+      float: right;
+      font-size: 15pt;
+    }
+  </style>
+</head>
+<body>
+<div class="main">
+  <button class="btn" id="begin">开始游戏</button>
+  <form class="dfy">
+    <select id="difficulty">
+      <option value="0">简单</option>
+      <option value="1" selected>普通</option>
+      <option value="2">中等</option>
+      <option value="3">困难</option>
+    </select>
+  </form>
+  <p class="score" id="score">0</p>
+  <div class="map" id="map"></div>
+  <script type="text/javascript" src="js/snake.js"></script>
+</div>
+</body>
+</html>
