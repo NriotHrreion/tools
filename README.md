@@ -21,3 +21,11 @@ CPS检测|./cps|测试你的CPS
 ---
 ## 后记
 我之后还会再上传更多的小工具到这个仓库的。
+```php
+//获取内容
+$contents = file_get_contents("https://api.misakal.xyz/BTools/GetAvPic?av=2");
+//将获取到的内容转为json数组
+$data = json_decode($contents, true);
+//输出
+echo $data["info"];
+```
