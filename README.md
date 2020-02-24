@@ -21,11 +21,6 @@ CPS检测|./cps|测试你的CPS
 ---
 ## 后记
 我之后还会再上传更多的小工具到这个仓库的。
-```php
-//获取内容
-$contents = file_get_contents("https://api.misakal.xyz/BTools/GetAvPic?av=2");
-//将获取到的内容转为json数组
-$data = json_decode($contents, true);
-//输出
-echo $data["info"];
+```json
+{"error":0,"uid":"1","data":{"name":"bishi","sex":"男","face":"http://i0.hdslb.com/bfs/face/34c5b30a990c7ce4a809626d8153fa7895ec7b63.gif","sign":"","level":"4","relation":{"following":5,"follower":66070},"views":{"archive":1825101,"article":0},"likes":23659}}
 ```
