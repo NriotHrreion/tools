@@ -7,7 +7,7 @@ tool.misakal.xyz
 ## 如何体验
 你可以在[https://tool.misakal.xyz](https://tool.misakal.xyz)上的相同路径下体验。
 <br>
-**Example:**
+#### Example:
 比如你想体验贪吃蛇(**snake**)，就可以去[https://tool.misakal.xyz/snake](https://tool.misakal.xyz/snake)看看。
 
 ---
