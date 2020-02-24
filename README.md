@@ -21,6 +21,3 @@ CPS检测|./cps|测试你的CPS
 ---
 ## 后记
 我之后还会再上传更多的小工具到这个仓库的。
-```html
-<img src="https://api.misakal.xyz/Bing-Image" alt/>
-```
