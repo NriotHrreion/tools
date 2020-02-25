@@ -30,6 +30,7 @@ $news_contents = str_replace('http://', 'https://', $news_contents);
 $news_contents = str_replace('3g.163.com', 'news.163.com', $news_contents);
 //将数据转为数组
 $data = json_decode($news_contents, true)['T1348647853363'];
+...
 ```
 
 ---
