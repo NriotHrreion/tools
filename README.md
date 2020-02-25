@@ -17,7 +17,7 @@ Snake game|./snake|Classic little game
 
 ---
 ## Newspapers API
-#### 源码:
+#### Code:
 ```php
 //get api data
 $news_contents = file_get_contents("https://c.m.163.com/nc/article/handline/T1348647853363/0-40.html");
