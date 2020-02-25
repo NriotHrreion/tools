@@ -19,5 +19,19 @@ CPS检测|./cps|测试你的CPS
 贪吃蛇|./snake|经典的贪吃蛇游戏
 
 ---
+## 新闻头条API调用原理
+#### 源码:
+```php
+//获取API数据
+$news_contents = file_get_contents("https://c.m.163.com/nc/article/handline/T1348647853363/0-40.html");
+//转为https
+$news_contents = str_replace('http://', 'https://', $news_contents);
+//让API自动判断手机或电脑
+$news_contents = str_replace('3g.163.com', 'news.163.com', $news_contents);
+//将数据转为数组
+$data = json_decode($news_contents, true)['T1348647853363'];
+```
+
+---
 ## 后记
 我之后还会再上传更多的小工具到这个仓库的。
