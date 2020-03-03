@@ -14,6 +14,7 @@ tool|path|function
 Newspapers|./news|Read some news
 CPS test|./cps|CPS tester
 Snake game|./snake|Classic little game
+Nocp Startpage|[https://github.com/NriotHrreion/tools/releases](Download)|More concise tab page
 
 ---
 ## Newspapers API
