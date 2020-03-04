@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置选项</title>
+    <style>
+        img {
+            width: 150px;
+            height: 70px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>设置选项</h1>
+    <p>背景图</p>
+    <img src="image/bg.jpg" onclick="selectImg(0);">
+    <img src="image/bg0.jpg" onclick="selectImg(1);">
+    <img src="image/bg1.png" onclick="selectImg(2);">
+    <img src="image/bg2.png" onclick="selectImg(3);">
+    <img src="image/bg3.png" onclick="selectImg(4);">
+    <p id="stat"></p>
+    <script src="js/options.js"></script>
+</body>
+</html>
