@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Notepad
+    Copyright (c) NriotHrreion <nriot233@outlook.com> 2020
+    Design by Microsoft
+
+    The Web cmd is making on my free times, there may be some bugs.
+    If you found bug in it, please tell me.
+
+    Thanks for your use!
+ -->
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <script>
+        //no rightclick 
+        document.oncontextmenu = function nocontextmenu(e) {
+            e.cancelBubble = true;
+            e.returnValue = false;
+            return false;
+        };
+    </script>
+</head>
+<body style="margin: 0; padding: 0;">
+    <textarea id="note" cols="1000" rows="1000" onkeydown="saveFile(event)" style="padding: 10px; outline: none;"></textarea>
+
+    <script type="text/javascript">
+        var notepad = document.getElementById("note");
+        notepad.focus();
+
+        function saveFile(e) {
+            if(e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey))      {
+                e.preventDefault();
+                var filename = prompt("请输入文件名");
+                if(filename != null && filename != "" && filename != undefined) {
+                    download(filename, notepad.value, function() {
+                        alert("已将文件保存至 Downloads 文件夹");
+                    });
+                }
+            }
+        }
+
+        function fake_click(obj) {
+            var ev = document.createEvent("MouseEvents");
+            ev.initMouseEvent("click", true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            obj.dispatchEvent(ev);
+        }
+
+        function download(name, data, callback) {
+            var urlObject = window.URL || window.webkitURL || window;
+            var downloadData = new Blob([data]);
+            var save_link = document.createElementNS("http://www.w3.org/1999/xhtml", "a")
+            save_link.href = urlObject.createObjectURL(downloadData);
+            save_link.download = name;
+            fake_click(save_link);
+            callback();
+        }
+    </script>
+</body>
+</html>
