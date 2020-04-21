@@ -1,0 +1,28 @@
+/* Web cmd style */
+
+body {
+    background-color: #000;
+}
+body p {
+    cursor: default;
+    color: #fff;
+    font-family: SimSun-ExtB;
+    margin: 0;
+    font-size: 13pt;
+}
+textarea {
+    cursor: default;
+    caret-color: #fff;
+    border: transparent 0;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    overflow: hidden;
+    resize: none;
+    font-family: SimSun-ExtB;
+    font-size: 13pt;
+}
+::selection {
+    background-color: white;
+    color: black;
+}
