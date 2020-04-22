@@ -18,6 +18,8 @@ Nocp Startpage|[https://github.com/NriotHrreion/tools/releases](Download)|More c
 Web cmd|./cmd|Web cmd
 Notepad|./notepad|Web notepad(ctrl+s to save file)
 Unicode|./unicode|Unicode converter
+Base64|./base64|Base64 converter
+
 
 ---
 ## Newspapers API
