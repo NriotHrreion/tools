@@ -14,7 +14,7 @@ tool|path|function
 Newspapers|./news|Read some news
 CPS test|./cps|CPS tester
 Snake game|./snake|Classic little game
-Nocp Startpage|[https://github.com/NriotHrreion/tools/releases](Download)|More concise tab page
+Nocp Startpage|[Download](https://github.com/NriotHrreion/Nocp-startpage)|More concise tab page
 Web cmd|./cmd|Web cmd
 Notepad|./notepad|Web notepad(ctrl+s to save file)
 Unicode|./unicode|Unicode converter
